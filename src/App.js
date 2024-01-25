@@ -1,10 +1,10 @@
 import './App.css'
 import React from 'react'
-const justreddit = require('justreddit')
+import subs from './subs'
 
 function App() {
   const handleClick = () => {
-    const randSub = justreddit.randomSub()
+    const randSub = subs[Math.floor(Math.random() * (14999 + 1))]
 
     window.location = `https://redditfavorites.com/r/${randSub}`
   }
