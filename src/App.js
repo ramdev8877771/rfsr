@@ -10,7 +10,7 @@ function App() {
 
     window.location = `https://redditfavorites.com/r/${randSub}`
   }
-  if(count != 0){
+  if(count !== 0){
     setTimeout(handleClick, 1000)
   }
   return (
