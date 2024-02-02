@@ -3,7 +3,7 @@ import React from 'react'
 import subs from './subs'
 
 function App() {
-  const count = 0
+  let count = 0
   const handleClick = () => {
     const randSub = subs[Math.floor(Math.random() * (14999 + 1))]
     count += 1
