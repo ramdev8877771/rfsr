@@ -5,7 +5,7 @@ import subs from './subs'
 function App() {
   setTimeout(() => {
     handleClick()
-  }, 0)
+  }, 500)
   const handleClick = () => {
     const randSub = subs[Math.floor(Math.random() * (14999 + 1))]
 
