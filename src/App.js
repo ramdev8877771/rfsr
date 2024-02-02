@@ -8,7 +8,7 @@ function App() {
 
     window.location = `https://redditfavorites.com/r/${randSub}`
   }
-   setTimeout(handleClick, 10)
+   setTimeout(handleClick, 500)
   return (
     <div className='App' onClick={handleClick}>
       <h1>Click Anywhere</h1>
