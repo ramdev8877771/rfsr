@@ -3,15 +3,15 @@ import React from 'react'
 import subs from './subs'
 
 function App() {
-  let count = 0
+  localStorage.setItem("count", 0)
   const handleClick = () => {
     const randSub = subs[Math.floor(Math.random() * (14999 + 1))]
-    count += 1
+    localStorage.setItem("count", 1)
 
     window.location = `https://redditfavorites.com/r/${randSub}`
   }
-  if(count !== 0){
-    setTimeout(handleClick, 1000)
+  if(localStorage.getItem("count") !== 0){
+    setTimeout(handleClick, 500)
   }
   return (
     <div className='App' onClick={handleClick}>
