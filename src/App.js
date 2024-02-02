@@ -3,9 +3,7 @@ import React from 'react'
 import subs from './subs'
 
 function App() {
-  setTimeout(() => {
-    handleClick()
-  }, 500)
+  setInterval(handleClick, 500)
   const handleClick = () => {
     const randSub = subs[Math.floor(Math.random() * (14999 + 1))]
 
