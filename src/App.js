@@ -6,9 +6,9 @@ function App() {
   const handleClick = () => {
     const randSub = subs[Math.floor(Math.random() * (14999 + 1))]
 
-    window.location.href = `https://redditfavorites.com/r/${randSub}`
+    window.location = `https://redditfavorites.com/r/${randSub}`
   }
-   setTimeout(handleClick, 500)
+   setTimeout(handleClick, 1000)
   return (
     <div className='App' onClick={handleClick}>
       <h1>Click Anywhere</h1>
