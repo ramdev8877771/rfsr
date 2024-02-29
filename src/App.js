@@ -4,7 +4,7 @@ import subs from './subs'
 
 function App() {
   const handleClick = () => {
-    const randSub = subs[Math.floor(Math.random() * (14999 + 1))]
+    const randSub = subs[Math.floor(Math.random() * (999 + 1))]
 
     window.location = `https://redditfavorites.com/r/${randSub}`
   }
